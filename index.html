@@ -1,4 +1,11 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -722,9 +729,9 @@ button{
       <div class="rb-hint">&#128072; Tap Edit to reorder or change times</div>
       <button class="edit-toggle" id="edit-morning" onclick="toggleEdit('morning',event)">&#9998; Edit</button><div style="clear:both"></div>
       <div class="step-item" data-id="m1" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#9200;</span><div class="step-info"><div class="step-name">Wake up</div><div class="step-sub">Out of bed gently</div></div><button class="step-timer-btn" onclick="openTimer(event,'Wake up','&#9200;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
-      <div class="step-item" data-id="m2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#129477;</span><div class="step-info"><div class="step-name">Brush teeth</div><div class="step-sub">2 whole minutes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Brush teeth','&#129477;',2)">2 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">🪥</span><div class="step-info"><div class="step-name">Brush teeth</div><div class="step-sub">2 whole minutes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Brush teeth','🪥',2)">2 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
       <div class="step-item" data-id="m3" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#128083;</span><div class="step-info"><div class="step-name">Get dressed</div><div class="step-sub">Clothes picked yesterday</div></div><button class="step-timer-btn" onclick="openTimer(event,'Get dressed','&#128083;',10)">10 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
-      <div class="step-item" data-id="m4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#127963;</span><div class="step-info"><div class="step-name">Breakfast</div><div class="step-sub">Familiar food, no surprises</div></div><button class="step-timer-btn" onclick="openTimer(event,'Breakfast','&#127963;',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">🍳</span><div class="step-info"><div class="step-name">Breakfast</div><div class="step-sub">Familiar food, no surprises</div></div><button class="step-timer-btn" onclick="openTimer(event,'Breakfast','🍳',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
       <div class="step-item" data-id="m5" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#127890;</span><div class="step-info"><div class="step-name">Pack bag</div><div class="step-sub">Check list together</div></div><button class="step-timer-btn" onclick="openTimer(event,'Pack bag','&#127890;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
       <div class="add-step-row" id="add-morning" style="display:none"><input id="inp-morning" type="text" placeholder="Add a step (e.g. Take medicine)"><button onclick="addStep('morning')">+</button></div>
     </div>
@@ -758,7 +765,1295 @@ button{
       <div class="rb-hint">&#128072; Tap Edit to reorder or change times</div>
       <button class="edit-toggle" id="edit-bed" onclick="toggleEdit('bed',event)">&#9998; Edit</button><div style="clear:both"></div>
       <div class="step-item" data-id="b1" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128705;</span><div class="step-info"><div class="step-name">Bath / shower</div><div class="step-sub">Warm water calms the body</div></div><button class="step-timer-btn" onclick="openTimer(event,'Bath time','&#128705;',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
-      <div class="step-item" data-id="b2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128084;</span><div class="step-info"><div class="step-name">Pyjamas</div><div class="step-sub">Soft, sensory-safe clothes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Pyjamas','&#128084;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
+      <div class="step-item" data-id="b2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">🩳</span><div class="step-info"><div class="step-name">Pyjamas</div><div class="step-sub">Soft, sensory-safe clothes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Pyjamas','🩳',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
+      <div class="step-item" data-id="b3" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128214;</span><div class="step-info"><div class="step-name">Story time</div><div class="step-sub">Same book = predictability</div></div><button class="step-timer-btn" onclick="openTimer(event,'Story time','&#128214;',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
+      <div class="step-item" data-id="b4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128564;</span><div class="step-info"><div class="step-name">Lights out</div><div class="step-sub">Same time, every night</div></div><button class="step-timer-btn" onclick="openTimer(event,'Wind down','&#128564;',10)">10 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
+      <div class="add-step-row" id="add-bed" style="display:none"><input id="inp-bed" type="text" placeholder="Add a step..."><button onclick="addStep('bed')">+</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- SENSORY -->
+<div class="screen" id="screen-sensory">
+  <div class="reminder-card" style="margin-top:6px"><h3>&#9889; Early warning signs to watch for</h3><p>Covering ears or eyes &middot; Refusing to respond &middot; Repetitive movements &middot; Skin picking &middot; Rigid posture &middot; Getting very loud or suddenly very quiet</p></div>
+  <p class="sec-label">Tap what is helping right now</p>
+  <div class="sensory-grid">
+    <div class="s-card" onclick="toggleSensory(this,'s_headphones')"><span class="se">&#127911;</span><div class="sn">Headphones</div><div class="sd">Block overwhelming sounds instantly</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_weighted')"><span class="se">&#129528;</span><div class="sn">Weighted blanket</div><div class="sd">Deep pressure calms the nervous system</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_lights')"><span class="se">&#127769;</span><div class="sn">Dim the lights</div><div class="sd">Reduce visual overload fast</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_corner')"><span class="se">&#9978;</span><div class="sn">Calm corner</div><div class="sd">Their safe, predictable space</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_fidget')"><span class="se">&#129327;</span><div class="sn">Fidget toy</div><div class="sd">Channels sensory energy safely</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_music')"><span class="se">&#127925;</span><div class="sn">Favourite music</div><div class="sd">Familiar = safe = regulating</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_drink')"><span class="se">&#129380;</span><div class="sn">Cold drink</div><div class="sd">Temperature resets the body</div></div>
+    <div class="s-card" onclick="toggleSensory(this,'s_breathe')"><span class="se">&#129490;</span><div class="sn">Breathe together</div><div class="sd">IN for 4 counts, OUT for 6</div></div>
+  </div>
+</div>
+
+<!-- PUBLIC -->
+<div class="screen" id="screen-public">
+  <div class="pub-hero" style="margin-top:6px"><h2>Meltdown in Public &#127978;</h2><p>One of the hardest moments a special needs mom faces. You are not being judged the way you think you are &#8212; and even if you are, you are doing something extraordinary. Here is your step-by-step guide.</p></div>
+  <p class="sec-label">When it starts &#8212; act fast</p>
+  <div class="pub-step"><div class="pub-num">1</div><div class="pub-content"><h3>Don't react to the crowd &#8212; react to your child</h3><p>Onlookers disappear from your mind right now. Your child is the only person in the room. Get low to their level. Soft voice, soft face.</p></div></div>
+  <div class="pub-step"><div class="pub-num">2</div><div class="pub-content"><h3>Find the nearest exit or quiet corner</h3><p>Don't try to finish the shop or the errand. Head to the car, a quiet aisle, or outside. Fewer stimuli is the goal.</p></div></div>
+  <div class="pub-step"><div class="pub-num">3</div><div class="pub-content"><h3>Say as little as possible</h3><p>"You're safe. I've got you." &#8212; then stop talking. Every word is extra stimulation. Silence and presence are more powerful than explanation.</p></div></div>
+  <div class="pub-step"><div class="pub-num">4</div><div class="pub-content"><h3>Use your go-bag items immediately</h3><p>Headphones, fidget, snack, comfort item. Having these ready before you leave home makes this moment go from chaos to manageable.</p></div></div>
+  <div class="pub-step"><div class="pub-num">5</div><div class="pub-content"><h3>Don't apologise to strangers during the meltdown</h3><p>Your energy goes to your child. You owe bystanders nothing in this moment.</p></div></div>
+  <div class="pub-step"><div class="pub-num">6</div><div class="pub-content"><h3>Wait it out somewhere safe</h3><p>In the car with music, outside, in a fitting room. Give your child 10&#8211;15 minutes to fully come down before moving on.</p></div></div>
+  <div class="pub-affirmation"><h3>&#128156; Affirmations for that moment</h3>
+    <div class="affirmation">"I am not failing. My child is struggling, and I am right here with them."</div>
+    <div class="affirmation">"Strangers' opinions last a second. My child's trust in me lasts a lifetime."</div>
+    <div class="affirmation">"This is hard because I am doing this alone. That is not weakness &#8212; that is strength."</div>
+    <div class="affirmation">"We will get through this. We always do."</div>
+    <div class="affirmation">"My child is not giving me a hard time. They are having a hard time."</div>
+  </div>
+  <div class="pub-prep"><h3>&#127890; Public outing go-bag checklist</h3>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag1')"> Noise-cancelling headphones or earplugs</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag2')"> Fidget toy or comfort item</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag3')"> Safe snack (their favourite)</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag4')"> Change of clothes</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag5')"> Visual schedule card for the outing</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag6')"> Small weighted lap pad or blanket</label>
+    <label class="prep-item"><input type="checkbox" onchange="saveBag(this,'bag7')"> This app open and ready</label>
+  </div>
+  <p class="sec-label">Before you go out</p>
+  <div class="tip-card"><span class="tip-tag tt-daily">&#128197; Timing</span><h3>Choose your timing carefully</h3><p>Early morning weekdays are quietest. Avoid Friday afternoons and weekends. Plan around your child's regulation window, not your to-do list.</p></div>
+  <div class="tip-card"><span class="tip-tag tt-calm">&#128506; Prepare them</span><h3>Walk them through the outing beforehand</h3><p>Show pictures of the place. Tell them exactly what you will do and in what order. "We go in, we get milk and apples, we pay, we leave." Give them a job and an end point they can look forward to.</p></div>
+</div>
+
+<!-- MEALS -->
+<div class="screen" id="screen-meals">
+  <div class="reminder-card" style="margin-top:6px;border-color:rgba(168,216,200,0.5)"><h3 style="color:var(--mint-dark)">&#127869; On hard days &#8212; safe food beats balanced food</h3><p>A familiar meal eaten calmly does more good than a nutritious one eaten in tears. You're not failing &#8212; you're being wise.</p></div>
+  <p class="sec-label">Under 15 minutes</p>
+  <div class="meal-card"><span class="meal-e">&#129361;</span><div><div class="meal-name">PB &amp; banana wrap</div><div class="meal-desc">Peanut butter + sliced banana in a soft tortilla. No cooking needed.</div><div class="meal-tags"><span class="mtag mt-time">5 min</span><span class="mtag mt-easy">No cook</span><span class="mtag mt-safe">Widely accepted</span></div></div></div>
+  <div class="meal-card"><span class="meal-e">&#127963;</span><div><div class="meal-name">Yoghurt &amp; berries</div><div class="meal-desc">Plain yoghurt, frozen berries slightly thawed, drizzle of honey.</div><div class="meal-tags"><span class="mtag mt-time">2 min</span><span class="mtag mt-easy">No cook</span></div></div></div>
+  <div class="meal-card"><span class="meal-e">&#129372;</span><div><div class="meal-name">Scrambled eggs on toast</div><div class="meal-desc">Soft, predictable, familiar. High protein supports regulation.</div><div class="meal-tags"><span class="mtag mt-time">8 min</span><span class="mtag mt-safe">High protein</span></div></div></div>
+  <p class="sec-label">Always in the cupboard</p>
+  <div class="meal-card"><span class="meal-e">&#127837;</span><div><div class="meal-name">Plain pasta + butter</div><div class="meal-desc">No sauce. The universal safe food. Winning is them eating anything.</div><div class="meal-tags"><span class="mtag mt-time">12 min</span><span class="mtag mt-safe">Universally safe</span></div></div></div>
+  <div class="meal-card"><span class="meal-e">&#129380;</span><div><div class="meal-name">Smoothie</div><div class="meal-desc">Banana + milk + hidden spinach + honey. Nutrients without a fight.</div><div class="meal-tags"><span class="mtag mt-time">3 min</span><span class="mtag mt-easy">No cook</span></div></div></div>
+  <div class="meal-card"><span class="meal-e">&#129379;</span><div><div class="meal-name">Waffles + fruit</div><div class="meal-desc">Frozen waffles, toaster, berries. Familiar, quick, no pressure.</div><div class="meal-tags"><span class="mtag mt-time">4 min</span><span class="mtag mt-easy">No cook</span></div></div></div>
+</div>
+
+<!-- TIPS -->
+<div class="screen" id="screen-tips">
+  <div style="margin-top:6px;width:100%;overflow:hidden">
+    <div class="tip-card"><span class="tip-tag tt-urgent">&#128308; Crisis moment</span><h3>When a meltdown is already happening</h3><p>Lower your voice first &#8212; don't match their energy. Say "I'm here. You're safe." Remove noise or brightness. Stop talking. Presence over words.</p><div class="tip-quote">By the time it's full blown it's like a car at 100mph &#8212; you can't brake hard. Your only job now is to be the calm they can't find themselves.</div></div>
+    <div class="tip-card"><span class="tip-tag tt-calm">&#127968; After school</span><h3>After-school restraint collapse</h3><p>Your child held it together all day at school. Home is where they finally feel safe enough to fall apart. This is a sign they trust you. Keep the first 20 minutes completely low-demand &#8212; no questions, no homework, just snack and space.</p></div>
+    <div class="tip-card"><span class="tip-tag tt-daily">&#128197; Transitions</span><h3>Leaving the house without a meltdown</h3><p>Give a 10-minute warning, then a 5-minute warning. Use the visual schedule so they can see what comes next. Never say "we're leaving NOW" without warning &#8212; that's a guaranteed trigger.</p></div>
+    <div class="tip-card"><span class="tip-tag tt-daily">&#128722; Outings</span><h3>Supermarket and public trips</h3><p>Go at quieter times. Bring headphones and a fidget. Give them a job &#8212; "help me find the apples." One goal per trip. Leave before overload hits, not after.</p></div>
+    <div class="tip-card"><span class="tip-tag tt-mama">&#128156; For you, mama</span><h3>You can't regulate them if you're dysregulated</h3><p>Your nervous system matters. After a big meltdown, you need to come down too. Even 3 slow breaths makes a real difference in your cortisol levels.</p><div class="tip-quote">You are not failing. You are doing the hardest job in the world, alone, every single day. That is extraordinary.</div></div>
+  </div>
+</div>
+
+</div><!-- /phone -->
+
+<!-- SOS OVERLAY -->
+<div class="overlay" id="sos-overlay">
+  <div class="sos-panel">
+    <button class="sos-close" onclick="closeSOS()">&#10005;</button>
+    <div class="sos-banner"><span class="sos-big">&#128680;</span><div><h2>Meltdown SOS</h2><p>Work through each step. Tap to check it off. You can do this, mama. &#128156;</p></div></div>
+    <div class="phase-row"><div class="phase-dot" style="background:var(--rose)"></div><div class="phase-txt">Phase 1 &#8212; First 60 seconds</div><div class="phase-line"></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">1</div><div><div class="sos-step-title">Breathe first. Lower your voice.</div><div class="sos-step-hint">Take one slow breath before anything. Don't match their panic &#8212; be the anchor.</div></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">2</div><div><div class="sos-step-title">Remove obvious triggers</div><div class="sos-step-hint">Too loud? Turn it off. Too bright? Dim or move. Too crowded? Create space.</div></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">3</div><div><div class="sos-step-title">Say: "I'm here. You're safe."</div><div class="sos-step-hint">Minimal words. Low voice. Repeat slowly if needed. No explaining yet.</div></div></div>
+    <div class="breathe-box"><div class="breathe-circle">breathe</div><div class="breathe-label">Breathe IN as the circle grows &middot; OUT as it shrinks &middot; 3 rounds</div></div>
+    <div class="phase-row"><div class="phase-dot" style="background:var(--lavender)"></div><div class="phase-txt">Phase 2 &#8212; Sensory support</div><div class="phase-line"></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">4</div><div><div class="sos-step-title">Offer headphones or a quiet space</div><div class="sos-step-hint">Offer, don't force. "Do you want your headphones?" &#8212; then wait.</div></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">5</div><div><div class="sos-step-title">Offer their comfort item</div><div class="sos-step-hint">Their special toy, blanket, or fidget. Something familiar = something safe.</div></div></div>
+    <div class="phase-row"><div class="phase-dot" style="background:var(--mint)"></div><div class="phase-txt">Phase 3 &#8212; De-escalate and redirect</div><div class="phase-line"></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">6</div><div><div class="sos-step-title">Give space &#8212; no eye contact demands</div><div class="sos-step-hint">Sit nearby but not hovering. Be present without pressure.</div></div></div>
+    <div class="sos-step" onclick="checkSOS(this)"><div class="sos-num">7</div><div><div class="sos-step-title">Use First-Then once they're calmer</div><div class="sos-step-hint">When they can hear you again, offer a First-Then to help them move forward.</div></div></div>
+    <div class="first-then-box">
+      <div class="ft-box-title">&#128260; The First-Then Tool &#8212; how to use it</div>
+      <div class="ft-box-desc">First-Then is a simple, calming way to help your child understand what's happening now and what reward comes after. It reduces anxiety because they can see the end point. Use it once they've started to calm &#8212; not during peak meltdown.</div>
+      <div class="ft-row"><div class="ft-block ft-first"><div class="ft-tag">First</div><span class="ft-emoji-big">&#128522;</span><div class="ft-label">Calm down</div></div><div class="ft-arrow">&rarr;</div><div class="ft-block ft-then"><div class="ft-tag">Then</div><span class="ft-emoji-big">&#127918;</span><div class="ft-label">Screen time</div></div></div>
+      <div class="ft-examples">
+        <div class="ft-ex-label">Real examples to say out loud</div>
+        <div class="ft-example"><strong>First</strong> we put our shoes on, <strong>then</strong> we go to the park you love &#127795;</div>
+        <div class="ft-example"><strong>First</strong> five calm breaths with me, <strong>then</strong> you can have your tablet &#128241;</div>
+        <div class="ft-example"><strong>First</strong> we eat two bites, <strong>then</strong> we can watch your show &#128250;</div>
+        <div class="ft-example"><strong>First</strong> we get in the car quietly, <strong>then</strong> your favourite song plays &#127925;</div>
+      </div>
+    </div>
+    <div class="mom-box">
+      <h3>&#128156; After the storm &#8212; your reset</h3>
+      <label class="mom-check"><input type="checkbox"> <span>Take 3 slow deep breaths &#8212; in through nose, out through mouth</span></label>
+      <label class="mom-check"><input type="checkbox"> <span>Drink a glass of water right now</span></label>
+      <label class="mom-check"><input type="checkbox"> <span>Remind yourself: this is not your fault and you handled it</span></label>
+      <label class="mom-check"><input type="checkbox"> <span>Text one safe person, even just "hard day"</span></label>
+      <label class="mom-check"><input type="checkbox"> <span>Rest for 5 minutes. You've earned it.</span></label>
+    </div>
+    <button class="sos-done-btn" onclick="closeSOS()">We got through it &#127800;</button>
+  </div>
+</div>
+
+<!-- TIMER OVERLAY -->
+<div class="timer-overlay" id="timer-overlay">
+  <div class="timer-content">
+    <span class="timer-emoji" id="t-emoji">&#9200;</span>
+    <div class="timer-step-name" id="t-name">Step</div>
+    <div class="timer-ring-wrap">
+      <svg class="timer-ring" width="165" height="165">
+        <defs><linearGradient id="tGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#F4A7B9"/><stop offset="100%" style="stop-color:#C5B4E3"/></linearGradient></defs>
+        <circle class="ring-bg" cx="82" cy="82" r="69"/>
+        <circle class="ring-prog" id="ring-prog" cx="82" cy="82" r="69" stroke-dasharray="433" stroke-dashoffset="0"/>
+      </svg>
+      <div class="timer-time" id="t-time">0:00</div>
+    </div>
+    <div class="timer-change-hint">&#9998; Change the minutes below then tap Set</div>
+    <div class="timer-edit-row">
+      <label>Minutes:</label>
+      <input type="number" id="t-mins-input" min="1" max="120" value="5">
+      <button class="set-btn" onclick="setCustomTime()">Set</button>
+    </div>
+    <div class="timer-fin" id="t-fin">&#127881; All done! Great job!</div>
+    <div class="timer-controls">
+      <button class="t-btn primary" id="t-ss" onclick="toggleTimer()">&#9654; Start</button>
+      <button class="t-btn" onclick="resetTimer()">&#8635; Reset</button>
+      <button class="t-btn" onclick="closeTimer()">&#10005; Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+// LOCAL STORAGE — save & load everything
+// ═══════════════════════════════════════════
+var STORE_KEY = 'rcc_data_v1';
+
+function loadData() {
+  try {
+    var raw = localStorage.getItem(STORE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch(e) { return {}; }
+}
+
+function saveData(data) {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(data)); } catch(e) {}
+}
+
+function getData(key, fallback) {
+  var d = loadData();
+  return d[key] !== undefined ? d[key] : fallback;
+}
+
+function setData(key, value) {
+  var d = loadData();
+  d[key] = value;
+  saveData(d);
+}
+
+// ═══════════════════════════════════════════
+// DATE
+// ═══════════════════════════════════════════
+var today = new Date();
+var todayStr = today.toDateString();
+document.getElementById('today-date').textContent = today.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+
+// Reset done steps on a new day
+var lastDate = getData('lastDate', '');
+if (lastDate !== todayStr) {
+  setData('lastDate', todayStr);
+  setData('donedSteps', {});
+}
+
+// ═══════════════════════════════════════════
+// OFFLINE DETECTION
+// ═══════════════════════════════════════════
+function updateOnlineStatus() {
+  var b = document.getElementById('offline-banner');
+  navigator.onLine ? b.classList.remove('show') : b.classList.add('show');
+}
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+updateOnlineStatus();
+
+// ═══════════════════════════════════════════
+// PWA — SERVICE WORKER REGISTRATION
+// ═══════════════════════════════════════════
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    // Inline service worker as blob so it works from a single HTML file
+    var swCode = `
+const CACHE = 'rcc-v1';
+const ASSETS = [self.location.href];
+self.addEventListener('install', e => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
+  self.skipWaiting();
+});
+self.addEventListener('activate', e => {
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))));
+  self.clients.claim();
+});
+self.addEventListener('fetch', e => {
+  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match(e.request))));
+});
+`;
+    var blob = new Blob([swCode], {type: 'application/javascript'});
+    var swUrl = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(swUrl).catch(function(){});
+  });
+}
+
+// ═══════════════════════════════════════════
+// PWA — INSTALL PROMPT
+// ═══════════════════════════════════════════
+var deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  deferredPrompt = e;
+  if (!getData('installDismissed', false)) {
+    document.getElementById('install-banner').classList.add('show');
+  }
+});
+function doInstall() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function() {
+      deferredPrompt = null;
+      document.getElementById('install-banner').classList.remove('show');
+    });
+  }
+}
+function dismissInstall() {
+  document.getElementById('install-banner').classList.remove('show');
+  setData('installDismissed', true);
+}
+
+// ═══════════════════════════════════════════
+// MOOD
+// ═══════════════════════════════════════════
+function setMood(mood, btn) {
+  document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  setData('lastMood', mood);
+  ['calm','tense','upset'].forEach(function(m) {
+    var el = document.getElementById('mp-'+m);
+    if (el) el.classList.remove('show');
+  });
+  if (mood === 'melting') { openSOS(); }
+  else if (mood === 'calm') { showTab('schedule', document.querySelectorAll('.tab')[0]); document.getElementById('mp-calm').classList.add('show'); }
+  else if (mood === 'tense') { showTab('schedule', document.querySelectorAll('.tab')[0]); document.getElementById('mp-tense').classList.add('show'); }
+  else if (mood === 'upset') { showTab('schedule', document.querySelectorAll('.tab')[0]); document.getElementById('mp-upset').classList.add('show'); }
+}
+
+// Restore last mood
+(function() {
+  var m = getData('lastMood', null);
+  if (m) {
+    var btns = document.querySelectorAll('.mood-btn');
+    var map = {calm:0, tense:1, upset:2, melting:3};
+    if (map[m] !== undefined) btns[map[m]].classList.add('active');
+  }
+})();
+
+// ═══════════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════════
+function showTab(name, btn) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  btn.classList.add('active');
+  setData('lastTab', name);
+}
+
+// Restore last tab
+(function() {
+  var t = getData('lastTab', 'schedule');
+  var tabs = document.querySelectorAll('.tab');
+  var map = {schedule:0, sensory:1, public:2, meals:3, tips:4};
+  if (map[t] !== undefined) showTab(t, tabs[map[t]]);
+})();
+
+// ═══════════════════════════════════════════
+// BLOCK TOGGLE
+// ═══════════════════════════════════════════
+function toggleBlock(hdr) {
+  var sec = hdr.nextElementSibling;
+  var ch = hdr.querySelector('.rb-chevron');
+  var open = sec.style.display !== 'none' && sec.style.display !== '';
+  sec.style.display = open ? 'none' : 'block';
+  ch.style.transform = open ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
+document.getElementById('steps-morning').style.display = 'block';
+
+// ═══════════════════════════════════════════
+// DONE STEPS — with localStorage persistence
+// ═══════════════════════════════════════════
+function toggleDone(item, section) {
+  item.classList.toggle('done');
+  var check = item.querySelector('.step-check');
+  check.innerHTML = item.classList.contains('done') ? '&#10003;' : '';
+  saveDoneState();
+  updateProgress();
+  updateCount(section);
+}
+
+function saveDoneState() {
+  var done = {};
+  document.querySelectorAll('.step-item').forEach(function(item) {
+    var id = item.getAttribute('data-id');
+    if (id) done[id] = item.classList.contains('done');
+  });
+  setData('doneSteps', done);
+}
+
+function loadDoneState() {
+  var done = getData('doneSteps', {});
+  document.querySelectorAll('.step-item').forEach(function(item) {
+    var id = item.getAttribute('data-id');
+    if (id && done[id]) {
+      item.classList.add('done');
+      item.querySelector('.step-check').innerHTML = '&#10003;';
+    }
+  });
+}
+
+function updateProgress() {
+  var all = document.querySelectorAll('.step-item').length;
+  var done = document.querySelectorAll('.step-item.done').length;
+  var pct = all > 0 ? Math.round(done / all * 100) : 0;
+  document.getElementById('ph-bar').style.width = pct + '%';
+  document.getElementById('ph-pct').textContent = pct + '%';
+  var msg = done + ' of ' + all + ' steps done';
+  if (pct === 100) msg += ' \u2014 you crushed it today! \uD83C\uDF89';
+  else if (pct >= 50) msg += ' \u2014 more than halfway! \uD83D\uDCAA';
+  else if (done === 0) msg = 'Tap a step to mark it done';
+  document.getElementById('ph-sub').textContent = msg;
+}
+
+function updateCount(sec) {
+  var steps = document.querySelectorAll('#steps-'+sec+' .step-item');
+  var done = document.querySelectorAll('#steps-'+sec+' .step-item.done');
+  var el = document.getElementById('cnt-'+sec);
+  if (el) el.textContent = done.length + ' / ' + steps.length + ' done';
+}
+
+// ═══════════════════════════════════════════
+// EDIT MODE
+// ═══════════════════════════════════════════
+var editMode = {morning:false, school:false, bed:false};
+function toggleEdit(sec, e) {
+  e.stopPropagation();
+  editMode[sec] = !editMode[sec];
+  document.getElementById('add-'+sec).style.display = editMode[sec] ? 'flex' : 'none';
+  document.querySelectorAll('#steps-'+sec+' .delete-btn').forEach(b => b.style.display = editMode[sec] ? 'flex' : 'none');
+  document.getElementById('edit-'+sec).innerHTML = editMode[sec] ? '&#10003; Done' : '&#9998; Edit';
+}
+
+var stepCounter = 100;
+function addStep(sec) {
+  var inp = document.getElementById('inp-'+sec);
+  var val = inp.value.trim();
+  if (!val) return;
+  var addRow = document.getElementById('add-'+sec);
+  var div = document.createElement('div');
+  var newId = sec + '_custom_' + (++stepCounter);
+  div.className = 'step-item';
+  div.setAttribute('data-id', newId);
+  div.draggable = true;
+  div.setAttribute('ondragstart','dragStart(event)');
+  div.setAttribute('ondragover','dragOver(event)');
+  div.setAttribute('ondrop','dropStep(event,"'+sec+'")');
+  div.innerHTML = '<span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,\''+sec+'\')"></div><span class="step-emoji">&#10024;</span><div class="step-info"><div class="step-name">'+val+'</div><div class="step-sub">Custom step</div></div><button class="step-timer-btn" onclick="openTimer(event,\''+val+'\',\'&#10024;\',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,\''+sec+'\')" style="display:flex">&#10005;</button>';
+  addRow.parentNode.insertBefore(div, addRow);
+  inp.value = '';
+  updateProgress();
+  updateCount(sec);
+}
+
+function deleteStep(e, btn, sec) {
+  e.stopPropagation();
+  btn.closest('.step-item').remove();
+  saveDoneState();
+  updateProgress();
+  updateCount(sec);
+}
+
+// ═══════════════════════════════════════════
+// DRAG & DROP
+// ═══════════════════════════════════════════
+var dragSrc = null;
+function dragStart(e) { dragSrc = e.currentTarget; e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain',''); }
+function dragOver(e) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; e.currentTarget.classList.add('drag-over'); }
+document.addEventListener('dragleave', function(e) { if (e.target.classList && e.target.classList.contains('step-item')) e.target.classList.remove('drag-over'); });
+function dropStep(e, sec) {
+  e.preventDefault(); e.stopPropagation();
+  var target = e.currentTarget; target.classList.remove('drag-over');
+  if (dragSrc && dragSrc !== target) {
+    var parent = target.parentNode;
+    var items = Array.from(parent.querySelectorAll('.step-item'));
+    var fromIdx = items.indexOf(dragSrc);
+    var toIdx = items.indexOf(target);
+    if (fromIdx < toIdx) parent.insertBefore(dragSrc, target.nextSibling);
+    else parent.insertBefore(dragSrc, target);
+  }
+  updateProgress(); updateCount(sec);
+}
+
+// ═══════════════════════════════════════════
+// SENSORY — with persistence
+// ═══════════════════════════════════════════
+function toggleSensory(card, key) {
+  card.classList.toggle('active');
+  var sensory = getData('sensory', {});
+  sensory[key] = card.classList.contains('active');
+  setData('sensory', sensory);
+}
+
+function loadSensory() {
+  var sensory = getData('sensory', {});
+  var cards = document.querySelectorAll('.s-card');
+  var keys = ['s_headphones','s_weighted','s_lights','s_corner','s_fidget','s_music','s_drink','s_breathe'];
+  cards.forEach(function(card, i) {
+    if (sensory[keys[i]]) card.classList.add('active');
+  });
+}
+
+// ═══════════════════════════════════════════
+// GO BAG — with persistence
+// ═══════════════════════════════════════════
+function saveBag(input, key) {
+  var bag = getData('bagChecks', {});
+  bag[key] = input.checked;
+  setData('bagChecks', bag);
+}
+
+function loadBag() {
+  var bag = getData('bagChecks', {});
+  for (var k in bag) {
+    var inputs = document.querySelectorAll('input[onchange*="'+k+'"]');
+    inputs.forEach(function(inp) { inp.checked = bag[k]; });
+  }
+}
+
+// ═══════════════════════════════════════════
+// SOS
+// ═══════════════════════════════════════════
+function openSOS() { document.getElementById('sos-overlay').classList.add('open'); }
+function closeSOS() {
+  document.getElementById('sos-overlay').classList.remove('open');
+  document.querySelectorAll('.sos-step').forEach(function(s) {
+    s.classList.remove('done');
+    var n = s.querySelector('.sos-num'); n.textContent = n.dataset.orig || n.textContent;
+  });
+  document.querySelectorAll('.mom-check input').forEach(c => c.checked = false);
+}
+document.querySelectorAll('.sos-num').forEach(function(n) { n.dataset.orig = n.textContent; });
+function checkSOS(step) {
+  step.classList.toggle('done');
+  var n = step.querySelector('.sos-num');
+  n.textContent = step.classList.contains('done') ? '\u2713' : n.dataset.orig;
+}
+
+// ═══════════════════════════════════════════
+// TIMER
+// ═══════════════════════════════════════════
+var timerTotal=0, timerLeft=0, timerRunning=false, timerInt=null;
+function openTimer(e, name, emoji, mins) {
+  e.stopPropagation();
+  timerTotal = mins*60; timerLeft = mins*60; timerRunning = false; clearInterval(timerInt);
+  document.getElementById('t-name').textContent = name;
+  document.getElementById('t-emoji').innerHTML = emoji;
+  document.getElementById('t-mins-input').value = mins;
+  document.getElementById('t-ss').innerHTML = '&#9654; Start';
+  document.getElementById('t-fin').style.display = 'none';
+  updateTimerDisplay();
+  document.getElementById('timer-overlay').classList.add('open');
+}
+function setCustomTime() {
+  var mins = parseInt(document.getElementById('t-mins-input').value) || 1;
+  clearInterval(timerInt); timerRunning = false;
+  timerTotal = mins*60; timerLeft = mins*60;
+  document.getElementById('t-ss').innerHTML = '&#9654; Start';
+  document.getElementById('t-fin').style.display = 'none';
+  updateTimerDisplay();
+}
+function closeTimer() { clearInterval(timerInt); timerRunning = false; document.getElementById('timer-overlay').classList.remove('open'); }
+function toggleTimer() {
+  if (timerLeft <= 0) return;
+  timerRunning = !timerRunning;
+  document.getElementById('t-ss').innerHTML = timerRunning ? '&#9646;&#9646; Pause' : '&#9654; Resume';
+  if (timerRunning) {
+    timerInt = setInterval(function() {
+      if (timerLeft > 0) { timerLeft--; updateTimerDisplay(); }
+      else { clearInterval(timerInt); timerRunning = false; document.getElementById('t-ss').innerHTML = '&#9654; Start'; document.getElementById('t-fin').style.display = 'block'; }
+    }, 1000);
+  } else clearInterval(timerInt);
+}
+function resetTimer() { clearInterval(timerInt); timerRunning = false; timerLeft = timerTotal; document.getElementById('t-ss').innerHTML = '&#9654; Start'; document.getElementById('t-fin').style.display = 'none'; updateTimerDisplay(); }
+function updateTimerDisplay() {
+  var m = Math.floor(timerLeft/60), s = timerLeft%60;
+  document.getElementById('t-time').textContent = m + ':' + (s < 10 ? '0' : '') + s;
+  var circ = 433, prog = timerTotal > 0 ? ((timerTotal-timerLeft)/timerTotal)*circ : 0;
+  document.getElementById('ring-prog').setAttribute('stroke-dashoffset', circ-prog);
+}
+
+// ═══════════════════════════════════════════
+// INIT — load all saved data on startup
+// ═══════════════════════════════════════════
+loadDoneState();
+loadSensory();
+loadBag();
+updateProgress();
+['morning','school','bed'].forEach(updateCount);
+</script>
+</body>
+</html>
+<meta name="apple-mobile-web-app-title" content="Calming Coach">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#F9E4F0">
+<meta name="description" content="Routine and Calming Coach for autism mamas — schedules, SOS meltdown help, sensory toolkit and more.">
+<title>Routine &amp; Calming Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --rose:#F4A7B9;--rose-light:#FDE8EE;--rose-dark:#C4607A;
+  --lavender:#C5B4E3;--lav-light:#EEE8FF;--lav-dark:#7C5CBF;
+  --mint:#A8D8C8;--mint-light:#E4F5F0;--mint-dark:#3D8C78;
+  --peach:#F9C8A0;--peach-light:#FEF0E4;--peach-dark:#C47A3A;
+  --sky:#A8CFEE;--sky-light:#E4F2FD;--sky-dark:#3A7FB5;
+  --text:#241A2A;--text2:#4E415F;--text3:#6F6282;
+  --border:rgba(180,160,210,0.25);--bg:#FDF6FF;
+  --shadow:0 2px 14px rgba(160,130,200,0.1);--r:14px;--rl:20px;
+}
+html{font-size:16px;height:100%}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-text-size-adjust:none}
+
+.phone{
+  width:100vw !important;
+  max-width:100vw !important;
+  min-height:100vh !important;
+  margin:0 auto !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  overflow-x:hidden !important;
+  overflow-y:auto !important;
+  position:relative !important;
+}
+
+.top-bar{background:linear-gradient(160deg,#F9E4F0 0%,#EDE4F9 50%,#E4EFF9 100%);border-bottom:1.5px solid var(--border);box-shadow:0 2px 16px rgba(160,130,200,0.13);position:sticky;top:0;z-index:300}
+.app-row{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 10px}
+.app-name{font-family:'Pacifico',cursive;font-size:17px;color:var(--rose-dark);letter-spacing:.3px;line-height:1}
+.date-chip{background:rgba(255,255,255,0.75);border-radius:20px;padding:5px 12px;font-size:14px;color:var(--text2);font-weight:700;border:1px solid var(--border)}
+.sos-top{background:linear-gradient(135deg,#FF8FAB,#C4607A);color:white;border:none;border-radius:12px;padding:9px 16px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:900;cursor:pointer;display:flex;align-items:center;gap:6px;box-shadow:0 3px 12px rgba(196,96,122,0.35);animation:sos-pulse 2.2s infinite}
+@keyframes sos-pulse{0%,100%{box-shadow:0 3px 12px rgba(196,96,122,0.35),0 0 0 0 rgba(196,96,122,0.3)}50%{box-shadow:0 3px 12px rgba(196,96,122,0.35),0 0 0 8px rgba(196,96,122,0)}}
+.mood-lbl{font-size:14px;font-weight:800;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;padding:6px 16px 8px}
+.mood-row{padding:0 12px 14px;display:flex;gap:8px}
+.mood-btn{flex:1;background:rgba(255,255,255,0.8);border:1.5px solid var(--border);border-radius:14px;padding:10px 4px;font-size:22px;cursor:pointer;transition:.2s;text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px}
+.mood-btn .lbl{font-size:14px;color:var(--text3);font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.mood-btn:hover,.mood-btn.active{border-color:var(--rose);background:rgba(253,232,238,0.9)}
+.tab-bar{display:flex;background:rgba(255,255,255,0.85);border-top:1px solid var(--border);padding:0 4px}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 2px 8px;cursor:pointer;border:none;background:none;color:var(--text3);font-family:'Nunito',sans-serif;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;transition:.2s;border-bottom:3px solid transparent}
+.tab i{font-size:19px}
+.tab.active{color:var(--rose-dark);border-bottom-color:var(--rose-dark)}
+.screen{display:none;padding:16px 16px 50px;width:100%;overflow-x:hidden}
+.screen.active{display:block}
+.sec-label{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--text3);margin:20px 0 12px;display:flex;align-items:center;gap:8px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.offline-banner{display:none;background:var(--rose-light);border-bottom:1.5px solid rgba(244,167,185,0.5);padding:9px 16px;font-size:13px;font-weight:700;color:var(--rose-dark);text-align:center}
+.offline-banner.show{display:block}
+
+/* INSTALL PROMPT */
+.install-banner{display:none;background:linear-gradient(135deg,var(--lav-light),var(--rose-light));border-bottom:1.5px solid rgba(197,180,227,0.4);padding:12px 16px;align-items:center;gap:12px}
+.install-banner.show{display:flex}
+.install-banner-text{flex:1;font-size:14px;font-weight:700;color:var(--lav-dark);line-height:1.4}
+.install-banner-text strong{display:block;font-size:13px;margin-bottom:2px}
+.install-btn{background:var(--lav-dark);color:white;border:none;border-radius:10px;padding:8px 14px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap}
+.install-dismiss{background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;padding:0 4px;flex-shrink:0}
+
+.progress-hero{background:white;border:1.5px solid rgba(244,167,185,0.3);border-radius:var(--rl);padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.ph-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.ph-title{font-size:15px;font-weight:800;color:var(--text)}
+.ph-pct{font-family:'Pacifico',cursive;font-size:30px;color:var(--rose-dark)}
+.ph-bar-wrap{background:var(--rose-light);border-radius:8px;height:8px;overflow:hidden}
+.ph-bar{height:100%;background:linear-gradient(90deg,var(--rose),var(--lavender));border-radius:8px;transition:width .5s cubic-bezier(.4,0,.2,1)}
+.ph-sub{font-size:14px;color:var(--text3);margin-top:8px}
+.mood-panel{display:none;padding:14px 16px;border-radius:var(--rl);margin:14px 0 0;animation:fadeIn .3s ease}
+.mood-panel.show{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.mp-title{font-size:14px;font-weight:800;margin-bottom:7px}
+.mp-body{font-size:14px;line-height:1.65;color:var(--text2);margin-bottom:12px}
+.mp-action{display:flex;flex-direction:column;gap:8px}
+.mp-btn{border:none;border-radius:12px;padding:12px 16px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;cursor:pointer;text-align:left;transition:.2s}
+.mp-tip{font-size:13px;color:var(--text3);padding:4px 0}
+.rb-hint{background:var(--lav-light);border-radius:10px;padding:8px 14px;font-size:14px;font-weight:700;color:var(--lav-dark);margin:0 0 6px;display:flex;align-items:center;gap:7px}
+.routine-block{background:white;border-radius:var(--rl);margin-bottom:14px;overflow:hidden;border:1.5px solid var(--border);box-shadow:var(--shadow)}
+.rb-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer}
+.rb-left{display:flex;align-items:center;gap:12px}
+.rb-icon{width:42px;height:42px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.rb-title{font-size:14px;font-weight:800;color:var(--text)}
+.rb-count{font-size:13px;color:var(--text3);margin-top:2px;font-weight:600}
+.rb-chevron{font-size:13px;color:var(--text3);transition:.3s;flex-shrink:0}
+.rb-steps{padding:0 13px 13px}
+.step-item{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:14px;padding:11px 13px;margin-top:8px;border:2px solid transparent;transition:background .2s,border .2s;position:relative;overflow:hidden}
+.step-item.done{background:var(--mint-light);border-color:rgba(168,216,200,0.5)}
+.step-item.drag-over{border-color:var(--rose);background:var(--rose-light)}
+.drag-handle{font-size:18px;color:var(--text3);cursor:grab;flex-shrink:0;user-select:none;padding:0 2px}
+.step-check{width:26px;height:26px;border-radius:50%;border:2px solid var(--lavender);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:.2s;cursor:pointer;font-weight:800}
+.step-item.done .step-check{background:var(--mint-dark);border-color:var(--mint-dark);color:white}
+.step-emoji{font-size:22px;flex-shrink:0;width:28px;text-align:center}
+.step-info{flex:1;min-width:0}
+.step-name{font-size:13px;font-weight:800;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step-sub{font-size:14px;color:var(--text3);margin-top:2px}
+.step-timer-btn{background:var(--lav-light);border:1px solid rgba(197,180,227,0.4);border-radius:9px;padding:5px 10px;color:var(--lav-dark);font-size:13px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;white-space:nowrap;transition:.2s;flex-shrink:0}
+.step-timer-btn:hover{background:var(--lavender);color:white}
+.delete-btn{background:rgba(244,167,185,0.2);border:none;border-radius:8px;width:24px;height:24px;color:var(--rose-dark);font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;flex-shrink:0;font-weight:800}
+.edit-toggle{float:right;margin-bottom:6px;background:var(--lav-light);border:1px solid rgba(197,180,227,0.4);border-radius:9px;padding:5px 12px;font-size:13px;font-weight:800;color:var(--lav-dark);cursor:pointer;font-family:'Nunito',sans-serif}
+.add-step-row{display:flex;gap:8px;margin-top:8px;clear:both}
+.add-step-row input{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:9px 12px;color:var(--text);font-size:13px;font-family:'Nunito',sans-serif;outline:none;min-width:0}
+.add-step-row input:focus{border-color:var(--rose)}
+.add-step-row button{background:var(--rose);border:none;border-radius:10px;padding:9px 16px;color:white;font-size:20px;cursor:pointer;line-height:1;flex-shrink:0;font-weight:800}
+.reminder-card{background:white;border:1.5px solid rgba(249,200,160,0.5);border-radius:var(--rl);padding:15px;margin-bottom:13px;box-shadow:var(--shadow)}
+.reminder-card h3{font-size:13px;font-weight:800;color:var(--peach-dark);margin-bottom:5px}
+.reminder-card p{font-size:14px;color:var(--text3);line-height:1.6}
+.sensory-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.s-card{background:white;border:2px solid var(--border);border-radius:var(--rl);padding:16px 12px;text-align:center;cursor:pointer;transition:.2s;box-shadow:var(--shadow)}
+.s-card:hover,.s-card.active{border-color:var(--rose);background:var(--rose-light)}
+.s-card .se{font-size:28px;display:block;margin-bottom:8px}
+.s-card .sn{font-size:14px;font-weight:800;color:var(--text)}
+.s-card .sd{font-size:14px;color:var(--text3);margin-top:3px;line-height:1.4}
+.pub-hero{background:linear-gradient(135deg,var(--peach-light),var(--rose-light));border:1.5px solid rgba(249,200,160,0.5);border-radius:var(--rl);padding:18px;margin-bottom:14px;box-shadow:var(--shadow)}
+.pub-hero h2{font-family:'Pacifico',cursive;font-size:18px;color:var(--peach-dark);margin-bottom:6px}
+.pub-hero p{font-size:14px;color:var(--text2);line-height:1.6}
+.pub-step{background:white;border-radius:var(--rl);padding:13px 15px;margin-bottom:10px;border:1.5px solid var(--border);box-shadow:var(--shadow);display:flex;gap:13px;align-items:flex-start}
+.pub-num{width:30px;height:30px;border-radius:50%;background:var(--peach-light);color:var(--peach-dark);font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.pub-content h3{font-size:14px;font-weight:800;color:var(--text);margin-bottom:4px}
+.pub-content p{font-size:13px;color:var(--text3);line-height:1.55}
+.pub-affirmation{background:linear-gradient(135deg,var(--lav-light),var(--rose-light));border-radius:var(--rl);padding:16px;margin:16px 0;border:1.5px solid rgba(197,180,227,0.4);box-shadow:var(--shadow)}
+.pub-affirmation h3{font-size:14px;font-weight:800;color:var(--lav-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:.06em}
+.affirmation{font-size:14px;color:var(--text2);padding:8px 0;border-bottom:1px solid rgba(197,180,227,0.2);line-height:1.55;font-style:italic}
+.affirmation:last-child{border-bottom:none}
+.pub-prep{background:white;border-radius:var(--rl);padding:15px;margin-bottom:10px;border:1.5px solid var(--border);box-shadow:var(--shadow)}
+.pub-prep h3{font-size:13px;font-weight:800;color:var(--text);margin-bottom:9px}
+.prep-item{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:14px;color:var(--text2);border-bottom:1px solid var(--border);cursor:pointer}
+.prep-item:last-child{border-bottom:none}
+.prep-item input{accent-color:var(--rose-dark);width:16px;height:16px;flex-shrink:0}
+.meal-card{background:white;border:1.5px solid var(--border);border-radius:var(--rl);padding:13px 15px;margin-bottom:10px;display:flex;align-items:flex-start;gap:13px;box-shadow:var(--shadow)}
+.meal-e{font-size:30px;flex-shrink:0}
+.meal-name{font-size:13px;font-weight:800;color:var(--text)}
+.meal-desc{font-size:13px;color:var(--text3);margin-top:3px;line-height:1.5}
+.meal-tags{display:flex;gap:5px;margin-top:5px;flex-wrap:wrap}
+.mtag{font-size:14px;font-weight:800;padding:3px 8px;border-radius:7px}
+.mt-time{background:var(--mint-light);color:var(--mint-dark)}
+.mt-easy{background:var(--sky-light);color:var(--sky-dark)}
+.mt-safe{background:var(--peach-light);color:var(--peach-dark)}
+.tip-card{background:white;border:1.5px solid var(--border);border-radius:var(--rl);padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);transition:.2s;width:100%;overflow:hidden}
+.tip-card:hover{transform:translateY(-1px);border-color:rgba(244,167,185,0.4)}
+.tip-tag{font-size:14px;font-weight:800;padding:3px 9px;border-radius:7px;text-transform:uppercase;letter-spacing:.04em;display:inline-block;margin-bottom:7px}
+.tt-urgent{background:var(--rose-light);color:var(--rose-dark)}
+.tt-calm{background:var(--mint-light);color:var(--mint-dark)}
+.tt-daily{background:var(--sky-light);color:var(--sky-dark)}
+.tt-mama{background:var(--lav-light);color:var(--lav-dark)}
+.tip-card h3{font-size:13px;font-weight:800;color:var(--text);margin-bottom:5px;line-height:1.4;word-wrap:break-word}
+.tip-card p{font-size:14px;color:var(--text2);line-height:1.65;word-wrap:break-word}
+.tip-quote{background:var(--bg);border-left:3px solid var(--rose);border-radius:0 9px 9px 0;padding:9px 12px;margin-top:9px;font-size:13px;color:var(--text2);font-style:italic;line-height:1.6}
+.overlay{position:fixed;inset:0;background:rgba(80,50,100,0.55);z-index:900;display:none;align-items:flex-end;justify-content:center;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.overlay.open{display:flex;animation:fadeIn .2s ease}
+.sos-panel{background:white;border-radius:26px 26px 0 0;width:100%;max-width:430px;max-height:92vh;overflow-y:auto;padding:22px 18px 50px;animation:slideUp .3s cubic-bezier(.4,0,.2,1);position:relative}
+@keyframes slideUp{from{transform:translateY(60px);opacity:0}to{transform:none;opacity:1}}
+.sos-close{position:absolute;top:18px;right:18px;background:var(--bg);border:1.5px solid var(--border);border-radius:50%;width:36px;height:36px;color:var(--text2);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:800}
+.sos-banner{background:linear-gradient(135deg,var(--rose-light),var(--lav-light));border:1.5px solid rgba(244,167,185,0.4);border-radius:var(--rl);padding:15px;display:flex;gap:13px;align-items:center;margin-bottom:18px}
+.sos-big{font-size:40px;flex-shrink:0}
+.sos-banner h2{font-family:'Pacifico',cursive;font-size:19px;color:var(--rose-dark);margin-bottom:3px}
+.sos-banner p{font-size:13px;color:var(--text2);line-height:1.5}
+.phase-row{display:flex;align-items:center;gap:10px;margin:16px 0 9px}
+.phase-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.phase-txt{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--text2)}
+.phase-line{flex:1;height:1px;background:var(--border)}
+.sos-step{background:var(--bg);border-radius:14px;padding:13px 15px;margin-bottom:7px;display:flex;gap:12px;cursor:pointer;border:2px solid transparent;transition:.2s}
+.sos-step:hover{border-color:rgba(244,167,185,0.5)}
+.sos-step.done{background:var(--mint-light);border-color:rgba(168,216,200,0.5)}
+.sos-num{width:28px;height:28px;border-radius:50%;background:white;border:2px solid var(--lavender);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:var(--lav-dark);flex-shrink:0;transition:.2s}
+.sos-step.done .sos-num{background:var(--mint-dark);border-color:var(--mint-dark);color:white}
+.sos-step-title{font-size:13px;font-weight:800;color:var(--text);margin-bottom:3px}
+.sos-step-hint{font-size:13px;color:var(--text3);line-height:1.5}
+.breathe-box{background:linear-gradient(135deg,var(--sky-light),var(--lav-light));border:1.5px solid rgba(168,207,238,0.4);border-radius:var(--rl);padding:18px;text-align:center;margin:13px 0}
+.breathe-circle{width:82px;height:82px;border-radius:50%;background:rgba(168,207,238,0.3);border:2px solid var(--sky);margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--sky-dark);animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{}50%{background:rgba(168,207,238,0.5)}}
+.breathe-label{font-size:13px;color:var(--text2)}
+.first-then-box{background:linear-gradient(135deg,var(--lav-light),var(--mint-light));border:1.5px solid rgba(197,180,227,0.45);border-radius:var(--rl);padding:15px;margin:12px 0}
+.ft-box-title{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--lav-dark);margin-bottom:8px}
+.ft-box-desc{font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.55}
+.ft-row{display:flex;align-items:center;background:white;border-radius:13px;padding:12px;border:1.5px solid var(--border)}
+.ft-block{flex:1;text-align:center}
+.ft-tag{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px}
+.ft-first .ft-tag{color:var(--lav-dark)}
+.ft-then .ft-tag{color:var(--mint-dark)}
+.ft-emoji-big{font-size:28px;display:block;margin:4px 0}
+.ft-label{font-size:13px;font-weight:800;color:var(--text)}
+.ft-arrow{font-size:22px;color:var(--lavender);padding:0 8px;flex-shrink:0;font-weight:800}
+.ft-examples{margin-top:12px}
+.ft-ex-label{font-size:14px;font-weight:800;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.ft-example{background:white;border-radius:10px;padding:9px 12px;font-size:13px;color:var(--text2);margin-bottom:5px;border:1px solid var(--border);line-height:1.55}
+.ft-example strong{color:var(--lav-dark)}
+.mom-box{background:linear-gradient(135deg,var(--lav-light),var(--rose-light));border:1.5px solid rgba(197,180,227,0.4);border-radius:var(--rl);padding:14px;margin-top:14px}
+.mom-box h3{font-size:13px;font-weight:800;color:var(--lav-dark);margin-bottom:9px}
+.mom-check{display:flex;gap:10px;align-items:flex-start;padding:7px 0;cursor:pointer;border-bottom:1px solid rgba(197,180,227,0.2)}
+.mom-check:last-child{border-bottom:none}
+.mom-check input{accent-color:var(--lav-dark);width:15px;height:15px;flex-shrink:0;margin-top:2px}
+.mom-check span{font-size:14px;color:var(--text2);line-height:1.5}
+.sos-done-btn{width:100%;margin-top:18px;padding:16px;background:linear-gradient(135deg,var(--rose),var(--lavender));border:none;border-radius:var(--rl);color:white;font-family:'Pacifico',cursive;font-size:17px;cursor:pointer;box-shadow:0 4px 14px rgba(244,167,185,0.4)}
+.timer-overlay{position:fixed;inset:0;background:rgba(80,50,100,0.7);z-index:950;display:none;align-items:center;justify-content:center;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.timer-overlay.open{display:flex;animation:fadeIn .2s ease}
+.timer-content{background:white;border-radius:var(--rl);padding:26px 22px;text-align:center;width:310px;max-width:92vw;box-shadow:0 16px 50px rgba(160,120,200,0.25)}
+.timer-step-name{font-family:'Pacifico',cursive;font-size:18px;color:var(--rose-dark);margin-bottom:5px}
+.timer-emoji{font-size:42px;display:block;margin-bottom:9px;animation:float 2.5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.timer-ring-wrap{position:relative;width:165px;height:165px;margin:0 auto 12px}
+.timer-ring{transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:var(--rose-light);stroke-width:10}
+.ring-prog{fill:none;stroke:url(#tGrad);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .8s linear}
+.timer-time{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Pacifico',cursive;font-size:38px;color:var(--text);line-height:1}
+.timer-change-hint{background:var(--rose-light);border-radius:10px;padding:8px 13px;margin-bottom:10px;font-size:14px;font-weight:800;color:var(--rose-dark);text-align:center}
+.timer-edit-row{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:13px;background:var(--lav-light);border-radius:12px;padding:10px 14px}
+.timer-edit-row label{font-size:14px;font-weight:800;color:var(--lav-dark)}
+.timer-edit-row input{width:58px;border:2px solid var(--lavender);border-radius:9px;padding:6px 8px;font-size:15px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--text);text-align:center;outline:none;background:white}
+.timer-edit-row input:focus{border-color:var(--rose-dark)}
+.set-btn{background:var(--rose);border:none;border-radius:9px;padding:7px 14px;font-size:14px;font-weight:800;color:white;cursor:pointer;font-family:'Nunito',sans-serif}
+.timer-controls{display:flex;gap:8px;justify-content:center}
+.t-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:11px;padding:9px 15px;color:var(--text);font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;cursor:pointer;transition:.2s}
+.t-btn.primary{background:linear-gradient(135deg,var(--rose),var(--lavender));color:white;border:none;box-shadow:0 3px 10px rgba(244,167,185,0.4)}
+.timer-fin{background:var(--mint-light);border-radius:10px;padding:10px;margin-top:11px;font-size:13px;font-weight:700;color:var(--mint-dark);display:none}
+
+/* ── MOBILE FIXES ── */
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+  }
+  
+.phone{
+  width:100vw !important;
+  max-width:100vw !important;
+  min-height:100vh !important;
+  margin:0 auto !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  overflow-x:hidden !important;
+  overflow-y:auto !important;
+  position:relative !important;
+}
+
+  .top-bar {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 300;
+  }
+  .tab-bar {
+    padding: 0 2px;
+  }
+  .tab {
+    font-size: 8px !important;
+    padding: 6px 2px 5px !important;
+  }
+  .tab i { font-size: 16px !important; }
+  .app-name { font-size: 14px !important; }
+  .sos-top { font-size: 11px !important; padding: 7px 10px !important; }
+  .date-chip { font-size: 10px !important; padding: 4px 8px !important; }
+  .mood-lbl { font-size: 10px !important; padding: 4px 14px 5px !important; }
+  .mood-row { padding: 0 10px 10px !important; gap: 6px !important; }
+  .mood-btn { font-size: 18px !important; padding: 7px 3px !important; border-radius: 11px !important; }
+  .mood-btn .lbl { font-size: 8px !important; }
+  .screen {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px 14px 40px !important;
+    display: none;
+  }
+  .screen.active { display: block; }
+  .progress-hero { padding: 13px 14px !important; margin-bottom: 10px !important; }
+  .ph-title { font-size: 13px !important; }
+  .ph-pct { font-size: 24px !important; }
+  .ph-sub { font-size: 10px !important; }
+  .routine-block { margin-bottom: 10px !important; }
+  .rb-header { padding: 11px 13px !important; }
+  .rb-icon { width: 34px !important; height: 34px !important; font-size: 17px !important; border-radius: 11px !important; }
+  .rb-title { font-size: 13px !important; }
+  .rb-count { font-size: 10px !important; }
+  .rb-steps { padding: 0 10px 10px !important; }
+  .step-item { padding: 9px 10px !important; gap: 8px !important; border-radius: 11px !important; margin-top: 7px !important; }
+  .step-check { width: 22px !important; height: 22px !important; font-size: 11px !important; }
+  .step-emoji { font-size: 18px !important; width: 24px !important; }
+  .step-name { font-size: 12px !important; }
+  .step-sub { font-size: 9px !important; }
+  .step-timer-btn { font-size: 10px !important; padding: 4px 7px !important; }
+  .rb-hint { font-size: 11px !important; padding: 6px 12px !important; }
+  .edit-toggle { font-size: 10px !important; padding: 3px 9px !important; }
+  .add-step-row input { font-size: 12px !important; padding: 7px 10px !important; }
+  .mood-panel { padding: 12px 13px !important; border-radius: 14px !important; }
+  .mp-title { font-size: 13px !important; }
+  .mp-body { font-size: 11px !important; }
+  .mp-btn { font-size: 11px !important; padding: 10px 12px !important; }
+  .mp-tip { font-size: 10px !important; }
+  .sec-label { font-size: 10px !important; margin: 14px 0 9px !important; }
+  .reminder-card { padding: 12px !important; }
+  .reminder-card h3 { font-size: 12px !important; }
+  .reminder-card p { font-size: 11px !important; }
+  .sensory-grid { gap: 8px !important; }
+  .s-card { padding: 12px 10px !important; border-radius: 14px !important; }
+  .s-card .se { font-size: 24px !important; margin-bottom: 6px !important; }
+  .s-card .sn { font-size: 11px !important; }
+  .s-card .sd { font-size: 10px !important; }
+  .pub-hero { padding: 14px !important; margin-bottom: 11px !important; }
+  .pub-hero h2 { font-size: 16px !important; }
+  .pub-hero p { font-size: 11px !important; }
+  .pub-step { padding: 11px 12px !important; margin-bottom: 8px !important; gap: 10px !important; }
+  .pub-num { width: 26px !important; height: 26px !important; font-size: 11px !important; }
+  .pub-content h3 { font-size: 12px !important; }
+  .pub-content p { font-size: 11px !important; }
+  .affirmation { font-size: 11px !important; }
+  .pub-affirmation { padding: 13px !important; }
+  .pub-prep { padding: 12px !important; }
+  .pub-prep h3 { font-size: 11px !important; }
+  .prep-item { font-size: 11px !important; padding: 6px 0 !important; }
+  .meal-card { padding: 11px 13px !important; gap: 11px !important; margin-bottom: 8px !important; }
+  .meal-e { font-size: 26px !important; }
+  .meal-name { font-size: 12px !important; }
+  .meal-desc { font-size: 10px !important; }
+  .mtag { font-size: 9px !important; padding: 2px 7px !important; }
+  .tip-card { padding: 12px 13px !important; margin-bottom: 10px !important; }
+  .tip-tag { font-size: 9px !important; padding: 3px 8px !important; }
+  .tip-card h3 { font-size: 12px !important; }
+  .tip-card p { font-size: 11px !important; }
+  .tip-quote { font-size: 10px !important; padding: 8px 10px !important; }
+  /* SOS overlay mobile */
+  .sos-panel { padding: 16px 14px 40px !important; }
+  .sos-banner { padding: 12px !important; gap: 10px !important; }
+  .sos-big { font-size: 32px !important; }
+  .sos-banner h2 { font-size: 16px !important; }
+  .sos-banner p { font-size: 10px !important; }
+  .sos-step { padding: 10px 12px !important; gap: 9px !important; }
+  .sos-step-title { font-size: 12px !important; }
+  .sos-step-hint { font-size: 10px !important; }
+  .sos-num { width: 24px !important; height: 24px !important; font-size: 10px !important; }
+  .breathe-circle { width: 70px !important; height: 70px !important; font-size: 10px !important; }
+  .breathe-label { font-size: 10px !important; }
+  .ft-row { padding: 9px !important; }
+  .ft-emoji-big { font-size: 24px !important; }
+  .ft-label { font-size: 10px !important; }
+  .ft-box-desc { font-size: 11px !important; }
+  .ft-example { font-size: 10px !important; padding: 7px 9px !important; }
+  .mom-box { padding: 12px !important; }
+  .mom-check span { font-size: 11px !important; }
+  .sos-done-btn { font-size: 15px !important; padding: 13px !important; }
+  /* Timer mobile */
+  .timer-content { width: 290px !important; padding: 20px 16px !important; max-width: 88vw !important; }
+  .timer-step-name { font-size: 15px !important; }
+  .timer-emoji { font-size: 36px !important; }
+  .timer-ring-wrap { width: 150px !important; height: 150px !important; }
+  .timer-time { font-size: 34px !important; }
+  .timer-change-hint { font-size: 11px !important; padding: 7px 11px !important; }
+  .t-btn { font-size: 12px !important; padding: 8px 12px !important; }
+  /* First then */
+  .first-then-box { padding: 13px !important; }
+  .ft-box-title { font-size: 10px !important; }
+}
+</style>
+
+<style id="ultimate-mobile-fix">
+html, body{
+  width:100% !important;
+  max-width:100% !important;
+  overflow-x:hidden !important;
+  margin:0 !important;
+  padding:0 !important;
+  min-height:100vh !important;
+}
+
+body{
+  display:block !important;
+  transform:none !important;
+}
+
+@media screen and (max-width:700px){
+
+  body{
+    font-size:16px !important;
+  }
+
+  .phone,
+  .app,
+  .wrapper,
+  .container{
+    width:100vw !important;
+    max-width:100vw !important;
+    min-width:100vw !important;
+    margin:0 !important;
+    padding:0 !important;
+    transform:none !important;
+  }
+
+  .screen{
+    width:100% !important;
+    max-width:100% !important;
+    padding:14px 14px 120px !important;
+    box-sizing:border-box !important;
+  }
+
+  .top-bar{
+    position:sticky !important;
+    top:0 !important;
+    z-index:999 !important;
+  }
+
+  .routine-block,
+  .progress-hero,
+  .pub-step,
+  .pub-prep,
+  .tip-card,
+  .meal-card,
+  .mom-box,
+  .s-card{
+    width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+  }
+
+  .step-name{
+    white-space:normal !important;
+    line-height:1.4 !important;
+  }
+
+  .sensory-grid{
+    grid-template-columns:1fr 1fr !important;
+  }
+}
+</style>
+
+
+<style id="readability-upgrade">
+body{
+  color:#241A2A !important;
+}
+
+p, li, span, .step-sub, .meal-desc, .affirmation{
+  color:#2F2437 !important;
+  line-height:1.65 !important;
+}
+
+.step-name,
+.rb-title,
+.pub-title,
+.tip-title,
+h1,h2,h3,h4{
+  color:#211626 !important;
+  font-weight:700 !important;
+}
+
+.sos-panel{
+  width:96vw !important;
+  max-width:96vw !important;
+}
+
+.pub-step,
+.phase-card,
+.sos-step{
+  padding:16px !important;
+}
+
+button{
+  font-weight:700 !important;
+}
+</style>
+
+
+<style id="crisp-readable-fix">
+@media screen and (max-width:700px){
+
+  body{
+    -webkit-font-smoothing:antialiased !important;
+    text-rendering:optimizeLegibility !important;
+  }
+
+  /* Main body text */
+  p,
+  li,
+  .step-sub,
+  .meal-desc,
+  .affirmation,
+  .pub-content p,
+  .tip-card p{
+    font-size:15px !important;
+    line-height:1.75 !important;
+    color:#241A2A !important;
+    font-weight:500 !important;
+  }
+
+  /* Headings */
+  .rb-title,
+  .step-name,
+  .pub-title,
+  .tip-title,
+  .phase-title,
+  h1,h2,h3,h4{
+    font-size:17px !important;
+    line-height:1.55 !important;
+    color:#1E1624 !important;
+    font-weight:700 !important;
+  }
+
+  /* Small helper labels */
+  .rb-count,
+  .step-timer-btn,
+  .helper,
+  .hint,
+  .date-chip,
+  .lbl{
+    font-size:13px !important;
+    color:#3B3143 !important;
+    font-weight:600 !important;
+  }
+
+  /* App title */
+  .app-name{
+    font-size:19px !important;
+    color:#2A2031 !important;
+    font-weight:700 !important;
+  }
+
+  /* Buttons */
+  button{
+    font-size:15px !important;
+    font-weight:700 !important;
+  }
+
+  /* SOS readability */
+  .sos-panel p,
+  .sos-panel li,
+  .sos-panel span{
+    color:#241A2A !important;
+    font-size:15px !important;
+    line-height:1.8 !important;
+    font-weight:500 !important;
+  }
+
+  .sos-panel{
+    width:95vw !important;
+    max-width:95vw !important;
+  }
+}
+</style>
+
+<style id="mobile-readability-fix">
+/* Boost text legibility on phones — original sizes were tuned for designer mockups, too small on real devices */
+@media (max-width: 700px) {
+  html { font-size: 17px; }
+  body { font-size: 16px; line-height: 1.55; }
+
+  .app-name { font-size: 20px !important; }
+  .date-chip { font-size: 15px !important; padding: 6px 14px !important; }
+  .sos-top { font-size: 15px !important; padding: 11px 18px !important; }
+
+  .mood-lbl { font-size: 15px !important; padding: 8px 16px 10px !important; }
+  .mood-btn { font-size: 26px !important; padding: 12px 4px !important; }
+  .mood-btn .lbl { font-size: 13px !important; }
+
+  .tab { font-size: 11px !important; padding: 11px 2px 10px !important; }
+  .tab i { font-size: 22px !important; }
+
+  .sec-label { font-size: 14px !important; }
+  .offline-banner, .install-banner-text, .install-banner-text strong { font-size: 15px !important; }
+  .install-btn { font-size: 15px !important; padding: 10px 16px !important; }
+
+  .ph-title { font-size: 17px !important; }
+  .ph-pct { font-size: 34px !important; }
+  .ph-sub { font-size: 15px !important; }
+
+  .mp-title, .mp-body, .mp-btn { font-size: 16px !important; }
+  .mp-tip, .rb-hint { font-size: 15px !important; }
+
+  .rb-title { font-size: 16px !important; }
+  .rb-count, .rb-chevron { font-size: 14px !important; }
+
+  .step-name { font-size: 15px !important; }
+  .step-sub { font-size: 14px !important; }
+  .step-timer-btn { font-size: 14px !important; padding: 7px 12px !important; }
+  .step-emoji { font-size: 24px !important; }
+  .step-check { width: 28px; height: 28px; font-size: 14px !important; }
+  .add-step-row input { font-size: 16px !important; padding: 11px 13px !important; }
+  .edit-toggle { font-size: 14px !important; padding: 7px 14px !important; }
+
+  .reminder-card h3 { font-size: 15px !important; }
+  .reminder-card p { font-size: 15px !important; }
+
+  .s-card .se { font-size: 32px !important; }
+  .s-card .sn { font-size: 16px !important; }
+  .s-card .sd { font-size: 15px !important; }
+
+  .pub-hero h2 { font-size: 22px !important; }
+  .pub-hero p { font-size: 16px !important; }
+  .pub-content h3 { font-size: 16px !important; }
+  .pub-content p { font-size: 15px !important; }
+  .pub-num { width: 32px; height: 32px; font-size: 15px !important; }
+
+  .pub-affirmation h3 { font-size: 14px !important; }
+  .affirmation { font-size: 16px !important; }
+
+  .pub-prep h3 { font-size: 15px !important; }
+  .prep-item { font-size: 16px !important; padding: 10px 0 !important; }
+
+  .meal-name { font-size: 16px !important; }
+  .meal-desc { font-size: 15px !important; }
+  .meal-e { font-size: 34px !important; }
+  .mtag { font-size: 13px !important; }
+
+  .tip-tag { font-size: 12px !important; }
+  .tip-card h3 { font-size: 16px !important; }
+  .tip-card p { font-size: 16px !important; }
+  .tip-quote { font-size: 15px !important; }
+
+  .sos-banner h2 { font-size: 24px !important; }
+  .sos-banner p { font-size: 15px !important; }
+  .sos-big { font-size: 44px !important; }
+  .phase-txt { font-size: 14px !important; }
+  .sos-step-title { font-size: 16px !important; }
+  .sos-step-hint { font-size: 15px !important; }
+  .sos-num { width: 30px; height: 30px; font-size: 15px !important; }
+  .breathe-circle { width: 110px; height: 110px; font-size: 15px !important; }
+  .breathe-label { font-size: 15px !important; }
+
+  .ft-box-title { font-size: 14px !important; }
+  .ft-box-desc { font-size: 15px !important; }
+  .ft-emoji-big { font-size: 34px !important; }
+  .ft-label { font-size: 15px !important; }
+  .ft-ex-label { font-size: 13px !important; }
+  .ft-example { font-size: 15px !important; padding: 11px 14px !important; }
+  .ft-tag { font-size: 11px !important; }
+
+  .mom-box h3 { font-size: 15px !important; }
+  .mom-check span { font-size: 16px !important; }
+}
+</style>
+</head>
+<body>
+<div class="phone">
+
+<div class="offline-banner" id="offline-banner">&#128265; You are offline &#8212; all features still work!</div>
+
+<!-- INSTALL PROMPT BANNER -->
+<div class="install-banner" id="install-banner">
+  <div class="install-banner-text">
+    <strong>&#128241; Add to your home screen!</strong>
+    Install this app for quick access &#8212; works offline too
+  </div>
+  <button class="install-btn" id="install-btn" onclick="doInstall()">Install</button>
+  <button class="install-dismiss" onclick="dismissInstall()">&#10005;</button>
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="app-row">
+    <span class="app-name">Routine &amp; Calming Coach</span>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span class="date-chip" id="today-date">Today</span>
+      <button class="sos-top" onclick="openSOS()">&#128680; SOS</button>
+    </div>
+  </div>
+  <div class="mood-lbl">How is your child right now?</div>
+  <div class="mood-row">
+    <button class="mood-btn" onclick="setMood('calm',this)">&#128522;<span class="lbl">Calm</span></button>
+    <button class="mood-btn" onclick="setMood('tense',this)">&#128556;<span class="lbl">Tense</span></button>
+    <button class="mood-btn" onclick="setMood('upset',this)">&#128545;<span class="lbl">Upset</span></button>
+    <button class="mood-btn" onclick="setMood('melting',this)">&#127754;<span class="lbl">Melting</span></button>
+  </div>
+  <div class="tab-bar">
+    <button class="tab active" onclick="showTab('schedule',this)"><i class="ti ti-calendar-event"></i>Schedule</button>
+    <button class="tab" onclick="showTab('sensory',this)"><i class="ti ti-heart"></i>Sensory</button>
+    <button class="tab" onclick="showTab('public',this)"><i class="ti ti-building-store"></i>Public</button>
+    <button class="tab" onclick="showTab('meals',this)"><i class="ti ti-soup"></i>Meals</button>
+    <button class="tab" onclick="showTab('tips',this)"><i class="ti ti-bulb"></i>Tips</button>
+  </div>
+</div>
+
+<!-- SCHEDULE -->
+<div class="screen active" id="screen-schedule">
+  <div class="mood-panel" id="mp-calm" style="background:var(--mint-light);border:1.5px solid rgba(168,216,200,0.5)">
+    <div class="mp-title" style="color:var(--mint-dark)">&#128522; Great &#8212; let's keep the momentum going!</div>
+    <div class="mp-body">Your child is calm right now. This is the perfect time to move through the routine. Use this window &#8212; calm moments are golden.</div>
+  </div>
+  <div class="mood-panel" id="mp-tense" style="background:var(--peach-light);border:1.5px solid rgba(249,200,160,0.5)">
+    <div class="mp-title" style="color:var(--peach-dark)">&#128556; Tense &#8212; slow everything down</div>
+    <div class="mp-body">Before the schedule, bring the temperature down first:</div>
+    <div class="mp-action">
+      <button class="mp-btn" style="background:var(--peach-light);color:var(--peach-dark);border:1.5px solid rgba(249,200,160,0.5)" onclick="showTab('sensory',document.querySelectorAll('.tab')[1])">&#127911; Open sensory toolkit &rarr;</button>
+      <button class="mp-btn" style="background:var(--lav-light);color:var(--lav-dark);border:1.5px solid rgba(197,180,227,0.4)" onclick="openSOS()">&#128680; Go to SOS steps &rarr;</button>
+      <div class="mp-tip">&#128161; Lower your voice, reduce noise, give them 5&#8211;10 mins before expecting anything.</div>
+    </div>
+  </div>
+  <div class="mood-panel" id="mp-upset" style="background:var(--lav-light);border:1.5px solid rgba(197,180,227,0.5)">
+    <div class="mp-title" style="color:var(--lav-dark)">&#128545; Upset &#8212; pause the schedule for now</div>
+    <div class="mp-body">Don't push the routine right now. Your child needs to come down first.</div>
+    <div class="mp-action">
+      <button class="mp-btn" style="background:var(--lav-light);color:var(--lav-dark);border:1.5px solid rgba(197,180,227,0.5)" onclick="openSOS()">&#128680; Walk through SOS steps &rarr;</button>
+      <button class="mp-btn" style="background:var(--rose-light);color:var(--rose-dark);border:1.5px solid rgba(244,167,185,0.5)" onclick="showTab('sensory',document.querySelectorAll('.tab')[1])">&#129528; Open sensory toolkit &rarr;</button>
+      <div class="mp-tip">&#128156; Regulation before expectation. The schedule can wait. Safety and connection come first.</div>
+    </div>
+  </div>
+
+  <div class="progress-hero" style="margin-top:14px">
+    <div class="ph-top">
+      <div><div class="ph-title">Today's journey &#128155;</div><div class="ph-sub" id="ph-sub">Loading...</div></div>
+      <div class="ph-pct" id="ph-pct">0%</div>
+    </div>
+    <div class="ph-bar-wrap"><div class="ph-bar" id="ph-bar" style="width:0%"></div></div>
+  </div>
+
+  <!-- MORNING -->
+  <div class="routine-block">
+    <div class="rb-header" onclick="toggleBlock(this)">
+      <div class="rb-left"><div class="rb-icon" style="background:linear-gradient(135deg,var(--peach-light),var(--rose-light))">&#127751;</div><div><div class="rb-title">Morning routine</div><div class="rb-count" id="cnt-morning">0 / 5 done</div></div></div>
+      <span class="rb-chevron">&#9660;</span>
+    </div>
+    <div class="rb-steps" id="steps-morning">
+      <div class="rb-hint">&#128072; Tap Edit to reorder or change times</div>
+      <button class="edit-toggle" id="edit-morning" onclick="toggleEdit('morning',event)">&#9998; Edit</button><div style="clear:both"></div>
+      <div class="step-item" data-id="m1" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#9200;</span><div class="step-info"><div class="step-name">Wake up</div><div class="step-sub">Out of bed gently</div></div><button class="step-timer-btn" onclick="openTimer(event,'Wake up','&#9200;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">🪥</span><div class="step-info"><div class="step-name">Brush teeth</div><div class="step-sub">2 whole minutes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Brush teeth','🪥',2)">2 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m3" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#128083;</span><div class="step-info"><div class="step-name">Get dressed</div><div class="step-sub">Clothes picked yesterday</div></div><button class="step-timer-btn" onclick="openTimer(event,'Get dressed','&#128083;',10)">10 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">🍳</span><div class="step-info"><div class="step-name">Breakfast</div><div class="step-sub">Familiar food, no surprises</div></div><button class="step-timer-btn" onclick="openTimer(event,'Breakfast','🍳',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="step-item" data-id="m5" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'morning')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'morning')"></div><span class="step-emoji">&#127890;</span><div class="step-info"><div class="step-name">Pack bag</div><div class="step-sub">Check list together</div></div><button class="step-timer-btn" onclick="openTimer(event,'Pack bag','&#127890;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'morning')">&#10005;</button></div>
+      <div class="add-step-row" id="add-morning" style="display:none"><input id="inp-morning" type="text" placeholder="Add a step (e.g. Take medicine)"><button onclick="addStep('morning')">+</button></div>
+    </div>
+  </div>
+
+  <!-- AFTER SCHOOL -->
+  <div class="routine-block">
+    <div class="rb-header" onclick="toggleBlock(this)">
+      <div class="rb-left"><div class="rb-icon" style="background:linear-gradient(135deg,var(--rose-light),var(--lav-light))">&#127968;</div><div><div class="rb-title">After school</div><div class="rb-count" id="cnt-school">0 / 5 done</div></div></div>
+      <span class="rb-chevron">&#9660;</span>
+    </div>
+    <div class="rb-steps" id="steps-school" style="display:none">
+      <div class="rb-hint">&#128072; Tap Edit to reorder or change times</div>
+      <button class="edit-toggle" id="edit-school" onclick="toggleEdit('school',event)">&#9998; Edit</button><div style="clear:both"></div>
+      <div class="step-item" data-id="s1" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'school')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'school')"></div><span class="step-emoji">&#128682;</span><div class="step-info"><div class="step-name">Come inside calmly</div><div class="step-sub">No demands for 20 mins</div></div><button class="step-timer-btn" onclick="openTimer(event,'Calm arrival','&#128682;',20)">20 min</button><button class="delete-btn" onclick="deleteStep(event,this,'school')">&#10005;</button></div>
+      <div class="step-item" data-id="s2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'school')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'school')"></div><span class="step-emoji">&#127890;</span><div class="step-info"><div class="step-name">Drop bag &amp; shoes</div><div class="step-sub">Decompression begins</div></div><button class="step-timer-btn" onclick="openTimer(event,'Unpack','&#127890;',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'school')">&#10005;</button></div>
+      <div class="step-item" data-id="s3" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'school')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'school')"></div><span class="step-emoji">&#127822;</span><div class="step-info"><div class="step-name">Snack (their choice)</div><div class="step-sub">Safe food = regulation</div></div><button class="step-timer-btn" onclick="openTimer(event,'Snack','&#127822;',10)">10 min</button><button class="delete-btn" onclick="deleteStep(event,this,'school')">&#10005;</button></div>
+      <div class="step-item" data-id="s4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'school')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'school')"></div><span class="step-emoji">&#129528;</span><div class="step-info"><div class="step-name">Quiet / stim time</div><div class="step-sub">Their choice. No interruptions.</div></div><button class="step-timer-btn" onclick="openTimer(event,'Quiet time','&#129528;',30)">30 min</button><button class="delete-btn" onclick="deleteStep(event,this,'school')">&#10005;</button></div>
+      <div class="step-item" data-id="s5" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'school')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'school')"></div><span class="step-emoji">&#128218;</span><div class="step-info"><div class="step-name">Homework (if regulated)</div><div class="step-sub">Only when calm &amp; ready</div></div><button class="step-timer-btn" onclick="openTimer(event,'Homework','&#128218;',20)">20 min</button><button class="delete-btn" onclick="deleteStep(event,this,'school')">&#10005;</button></div>
+      <div class="add-step-row" id="add-school" style="display:none"><input id="inp-school" type="text" placeholder="Add a step..."><button onclick="addStep('school')">+</button></div>
+    </div>
+  </div>
+
+  <!-- BEDTIME -->
+  <div class="routine-block">
+    <div class="rb-header" onclick="toggleBlock(this)">
+      <div class="rb-left"><div class="rb-icon" style="background:linear-gradient(135deg,var(--lav-light),var(--sky-light))">&#127769;</div><div><div class="rb-title">Bedtime routine</div><div class="rb-count" id="cnt-bed">0 / 4 done</div></div></div>
+      <span class="rb-chevron">&#9660;</span>
+    </div>
+    <div class="rb-steps" id="steps-bed" style="display:none">
+      <div class="rb-hint">&#128072; Tap Edit to reorder or change times</div>
+      <button class="edit-toggle" id="edit-bed" onclick="toggleEdit('bed',event)">&#9998; Edit</button><div style="clear:both"></div>
+      <div class="step-item" data-id="b1" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128705;</span><div class="step-info"><div class="step-name">Bath / shower</div><div class="step-sub">Warm water calms the body</div></div><button class="step-timer-btn" onclick="openTimer(event,'Bath time','&#128705;',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
+      <div class="step-item" data-id="b2" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">🩳</span><div class="step-info"><div class="step-name">Pyjamas</div><div class="step-sub">Soft, sensory-safe clothes</div></div><button class="step-timer-btn" onclick="openTimer(event,'Pyjamas','🩳',5)">5 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
       <div class="step-item" data-id="b3" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128214;</span><div class="step-info"><div class="step-name">Story time</div><div class="step-sub">Same book = predictability</div></div><button class="step-timer-btn" onclick="openTimer(event,'Story time','&#128214;',15)">15 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
       <div class="step-item" data-id="b4" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="dropStep(event,'bed')"><span class="drag-handle">&#8942;</span><div class="step-check" onclick="toggleDone(this.parentElement,'bed')"></div><span class="step-emoji">&#128564;</span><div class="step-info"><div class="step-name">Lights out</div><div class="step-sub">Same time, every night</div></div><button class="step-timer-btn" onclick="openTimer(event,'Wind down','&#128564;',10)">10 min</button><button class="delete-btn" onclick="deleteStep(event,this,'bed')">&#10005;</button></div>
       <div class="add-step-row" id="add-bed" style="display:none"><input id="inp-bed" type="text" placeholder="Add a step..."><button onclick="addStep('bed')">+</button></div>
